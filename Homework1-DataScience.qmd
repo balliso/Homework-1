@@ -1,0 +1,52 @@
+---
+title: "Homework 1 - Data Science"
+format: html
+editor: visual
+---
+
+# Questions:
+
+**What do you think being a data scientist is about?**
+
+To me, being a data scientist is about using data to solve problems and communicate insights in ways that fit the needs of each situation. Data science could be data engineering for one project, exploratory analysis for another, and data modeling/inference for a third. For example, if you need to give information to a group of elementary school kids, you'll probably focus on analysis and then storytelling to deliver insights in an effective way. If you have tons of data stored for the same project in multiple different formats, you'll likely need to do some engineering. I think being a data scientist is about being a flexible problem-solver.
+
+**What differences/similarities do you see between data scientists and statisticians?**
+
+Similarities:
+
+-   They both work closely with data to answer questions and make informed decisions.
+
+-   Both do data modeling and translate data results into insights.
+
+Differences:
+
+-   Data scientists work with more varieties of data than statisticians (data size and format).
+
+-   Statisticians primarily develop models for data analysis while data scientists' work is a lot broader (data cleaning, storage, visualization, storytelling).
+
+**How do you view yourself in relation to these two areas?**
+
+I view myself as leaning more towards the data science side, because I am interested in the entire problem-solving cycle, especially generating data. I like working through the whole process - seeing a problem, creating a hypothesis, running experiments, analyzing results, and then presenting these results to others. I think statisticians focus on modeling and usually only work in post-experimental analysis, whereas data scientists are more involved in the entire process.
+
+# Code:
+
+This code chunk assigns the density of petal width from the iris data set to the object y.
+
+```{r}
+y <- density(iris$Petal.Width)
+```
+
+This code chunk uses three functions to describe y. Class shows the object y's class (density), type shows the type of object (list), and structure compactly displays the internal structure of y.
+
+```{r}
+class(y)
+typeof(y)
+str(y)
+```
+
+This is a plot showing density by petal width for the iris data set. I included a code chunk to plot this, and hid this chunk from the final document.
+
+```{r}
+#| echo: false
+plot(y)
+```
